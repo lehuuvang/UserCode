@@ -1,0 +1,20 @@
+﻿@page
+@model UserCode.Pages.SignIn.CodeSubmitModel
+@{
+
+}
+<form method="get">
+@if(!String.IsNullOrEmpty(Model.otpcheck)){
+    <div class="form-group">
+        <tr>
+            @ViewData["checkemail"]
+            <td>Ma xac nhan</td>
+            <td>
+                <input type="text" name="otpcheckview" />
+            </td>
+        </tr>
+        <br />    
+        <input type="submit" class="btn btn-primary" value="gữi OTP" />
+    </div>
+}
+</form>

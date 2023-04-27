@@ -1,0 +1,52 @@
+﻿@page
+@model UserCode.Pages.DetailComic.cartTextModel
+@using UserCode.Models
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+</head>
+<body>
+    <!--static-->
+    @* @{
+    var comics = ViewData["comics"] as List<Comic>;
+
+    }
+    @if (comics != null)
+    {
+    for (int i = 0; i < comics.Count; i++)
+    {
+    <p>@comics[i].ComicName</p>
+    }
+    }*@
+    @{
+        
+    }
+    @if (Request.Cookies["comics"] != null)
+    {
+        Comic_Read_WebsiteContext db = new Comic_Read_WebsiteContext();
+        string text = Request.Cookies["comics"];
+        string[] words = text.Split(' ');
+        for (int i = 0; i< words.Length; i++)
+        {
+            var comic = db.Comics.FirstOrDefault(s => s.ComicId.ToString() == words[i]);
+            if (comic != null)
+            {
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img"><img src="@comic.ComicBanner"/></div>
+                        <div class="card-body">
+                            <a class="nav-link text-dark" asp-area="" asp-page="../DetailComic/Index" asp-route-id="@comic.ComicId">@comic.ComicName</a>
+                        </div>
+                            <a asp-page="cartText" asp-page-handler="Delete" asp-route-id="@comic.ComicId" name="id">Bỏ theo dõi</a>
+                    </div>
+                </div>
+                </div>
+            }
+        }
+        <a asp-page="../Index">Continue follow</a>
+    }
+</body>
+</html>

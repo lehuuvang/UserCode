@@ -1,0 +1,104 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = UserCode
+build_property.RootNamespace = UserCode
+build_property.ProjectDir = C:\Users\asus\Desktop\ChuyenNganh\source\UserCode\UserCode\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\asus\Desktop\ChuyenNganh\source\UserCode\UserCode
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Components/CategoryComicView/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xDYXRlZ29yeUNvbWljVmlld1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Components/TopComicRatingView/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb3BDb21pY1JhdGluZ1ZpZXdcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/DetailComic/cartText.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsQ29taWNcY2FydFRleHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/DetailComic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsQ29taWNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SearchComics/comicSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoQ29taWNzXGNvbWljU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Shared/_loginPatialview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9sb2dpblBhdGlhbHZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Shared/_partiviewTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9wYXJ0aXZpZXdUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignIn/forgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbkluXGZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignIn/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbkluXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignIn/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbkluXFJlc2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignUp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignUp/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignUp/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignUp/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/SignUp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Desktop/ChuyenNganh/source/UserCode/UserCode/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4cgd07xcku

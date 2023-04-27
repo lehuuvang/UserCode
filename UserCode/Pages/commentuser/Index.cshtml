@@ -1,0 +1,54 @@
+﻿@page
+@model UserCode.Pages.commentuser.IndexModel
+@using UserCode.Models
+@*<p>
+    <a asp-page="Create">Create New</a>
+
+</p>*@
+<h2>Welcome to chatroom</h2>
+<table class="table text-center">
+ @*   <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment[0].CommnentContent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment[0].Account)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment[0].Chapter)
+            </th>
+            <th></th>
+        </tr>
+    </thead>*@
+  @*  <tbody>*@
+        @foreach (var item in Model.Comment) {
+       <tr>
+        <td>
+                <span style="margin-right:15px;font-size:16px;color:green">
+                    @Html.DisplayFor(modelItem => item.Account.AccountName)
+                </span>
+                <span style="font-size:20px">
+                    @Html.DisplayFor(modelItem => item.CommnentContent)
+                </span>
+                <span style="margin-left:10px"> 
+                   @Html.DisplayFor(modelItem => item.Date)
+                </span>
+                @*@Html.DisplayFor(modelItem => item.Chapter.ChapterId)*@
+           @* <td>
+                <a asp-page="./Edit" asp-route-id="@item.CommnentId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.CommnentId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.CommnentId">Delete</a>
+            </td>*@
+        </td>
+       </tr>
+}
+<form method="post">
+<input type="text" name="commentText" style="width:700px;height:60px;font-size:20px;margin-top:10px"/>
+ <input type="submit" value="Binh Luan" class="btn btn-success" style="margin-top:10px" />
+    </form>
+@*    </tbody>*@
+</table>

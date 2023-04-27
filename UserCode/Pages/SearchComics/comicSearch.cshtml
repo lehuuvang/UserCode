@@ -1,0 +1,37 @@
+﻿@page
+@model UserCode.Pages.SearchComics.comicSearchModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<h1>Tìm kiếm truyện</h1>
+<form method="get">
+    <input type="text" name="term"/>
+    <input type="submit" value="Tìm kiếm" class="btn btn-primary" />
+@if(ViewData["search"] != null){
+<div class="card-columns">
+    <div class="text-start">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var item in Model.comic)
+            {
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img" style="background-image: url(@item.ComicBanner);"></div>
+                        <div class="card-body">
+                               <a class="nav-link text-dark" asp-area="" asp-page="../DetailComic/Index" asp-route-id="@item.ComicId">@item.ComicName</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+ </div>
+ }
+</form>
+</body>
+</html>

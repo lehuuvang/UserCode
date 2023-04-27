@@ -1,0 +1,49 @@
+﻿@page
+@model UserCode.Pages.LoginModel
+@{
+    
+}
+<html>
+    <head>
+        <meta name="viewport" content="Width=device-width"/>
+        <title>
+            Login form
+        </title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body>
+        <h2> đăng nhập </h2>
+        <form method="post" asp-page="Login"> 
+            @Model.msg
+            <table>
+                <tr>
+                    <td>User name</td>
+                    <td>
+                    <input type="text" name="accountName"/>
+                    </td>
+                </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password"/>
+                </td>
+            </tr>  
+            <tr>
+                <div class="g-recaptcha" data-siteKey="6LeHnf8iAAAAAMIJblN-8ZBDDtNvP424JDjgJXYK">
+                </div>
+            </tr>
+            <tr>
+                 <a asp-page="../SignIn/forgotPassword">Quên mật khẩu</a>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="Login"/>
+                    <br />
+                    <a href="/SignUp/Create">Sign up</a>
+                </td>
+            </tr>
+            </table>
+        </form>
+    </body>
+</html>

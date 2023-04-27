@@ -1,0 +1,9 @@
+﻿<h5>TOP YÊU THÍCH</h5>
+
+@foreach (var ratingComic in Model)
+{
+    if(ratingComic.Rating >= 8){ 
+
+    <li>@ratingComic.ComicName</li>
+    }
+}

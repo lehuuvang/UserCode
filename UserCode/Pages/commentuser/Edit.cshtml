@@ -1,0 +1,44 @@
+﻿@page
+@model UserCode.Pages.commentuser.EditModel
+
+<h4>Comment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Comment.CommnentId" />
+            <div class="form-group">
+                <label asp-for="Comment.CommnentContent" class="control-label"></label>
+                <input asp-for="Comment.CommnentContent" class="form-control" />
+                <span asp-validation-for="Comment.CommnentContent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comment.Date" class="control-label"></label>
+                <input asp-for="Comment.Date" class="form-control" />
+                <span asp-validation-for="Comment.Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comment.ChapterId" class="control-label"></label>
+                <select asp-for="Comment.ChapterId" class="form-control" asp-items="ViewBag.ChapterId"></select>
+                <span asp-validation-for="Comment.ChapterId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comment.AccountId" class="control-label"></label>
+                <select asp-for="Comment.AccountId" class="form-control" asp-items="ViewBag.AccountId"></select>
+                <span asp-validation-for="Comment.AccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

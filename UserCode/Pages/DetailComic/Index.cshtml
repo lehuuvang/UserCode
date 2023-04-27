@@ -1,0 +1,70 @@
+﻿@page
+@model UserCode.Pages.DetailComic.IndexModel
+@{
+    string a = "đang hoạt động";
+}
+<h1>Nội dung truyện</h1>
+<div class="shr-btn shr-hd cl">
+    <a class="shr-fb" href="http://www.facebook.com/sharer.php?u=https://anime1-f4vnn.blogspot.com/2020/05/can-nha-so-99.html" target="_blank" title="Share to Facebook"><i class="fa fa-facebook"></i> Share on Facebook</a>
+    <a class="shr-tw" href="http://twitter.com/share?url=https://anime1-f4vnn.blogspot.com/2020/05/can-nha-so-99.html" target="_blank" title="Share to Twitter"><i class="fa fa-twitter"></i> Share on Tweet</a>
+</div>
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Comic.ComicName)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Comic.ComicName)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Comic.Describe)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Comic.Describe)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Comic.ComicBanner)
+    </dt>
+    <dd class="col-sm-10">
+        <img src="@Html.DisplayFor(model => model.Comic.ComicBanner)" alt="not found">
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Comic.DateSummitted)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Comic.DateSummitted)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Comic.Rating)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Comic.Rating)
+    </dd>
+    <dt class="col-sm-2">
+        Trạng thái
+    </dt>
+    <dd class="col-sm-10">
+        @if(Model.Comic.ComicStatus.StartsWith("1") || Model.Comic.ComicStatus.StartsWith("True")){
+            @Model.Comic.ComicStatus.Replace("1","Đang hoạt động")
+        }
+        else{
+            @Model.Comic.ComicStatus.Replace("0","Đang tiến hành")
+        }
+    </dd>
+    <dt class="col-sm-2">
+    </dt>
+     <dd class="col-sm-10">
+        <a asp-page="cartText" asp-page-handler="Buy" asp-route-id="@Model.Comic.ComicId">Theo dõi</a>
+        <a asp-page="cartText" asp-page-handler="Delete" asp-route-id="@Model.Comic.ComicId">Bỏ theo dõi</a>
+       @* <a asp-page="cartText" asp-page-handler="buynow" asp-route-id="@Model.Comic.ComicId">Following</a>*@
+     </dd>
+    @* 
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Comic.Account)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Comic.Account.AccountId)
+    </dd>
+    *@
+    @await Component.InvokeAsync("NToastNotify")
+</dl>
+<h1>Danh sách chương</h1>

@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Http
+@using UserCode.Models
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    string accountname = HttpContextAccessor.HttpContext.Session.GetString("AccountName"); 
+}
+    <ul class="navbar-nav">
+        @if (accountname != null)
+        {
+        <li class="nav-item">
+            <a class="nav-link text-dark" title="Manage" asp-page="/SignUp/Edit">Xin chào @accountname</a>
+            </li>
+            <li class="nav-item">           
+            <form class="form-inline" asp-page ="/SignIn/Login">                
+                <button type="submit" class="nav-link btn btn-link text-dark">Đăng xuất</button>
+             </form>
+        </li>
+        }
+         else 
+        {           
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-page="/SignUp/Create">Đăng kí</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-page="/SignIn/Login">Đăng nhập</a>
+            </li>
+        }
+    </ul>
